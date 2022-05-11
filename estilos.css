@@ -176,6 +176,7 @@ header label:hover {
         border-right: 2px solid rgb(0, 0, 0);
         animation: tipado2 2s infinite alternate steps(11);
     }
+}
     
 
     @keyframes tipado {
@@ -194,7 +195,146 @@ header label:hover {
                 width: 25%;
             } 
     }
-   
- 
+    @media (max-width: 576px) {
+    
+        header label {
+         display: block;
+         margin-left: 88%;
+         z-index: 1;          
+     }
+     .menu {
+         position: absolute;
+         background: rgb(210, 214, 211);
+         width: 100%;
+         margin-left: -100%;
+         justify-content: center;
+     }
+     .menu ul {
+         flex-direction: column;
+         padding: 2em;    
+     }
+     #btn-menu:checked ~ .menu {
+         margin: 0;
+     }
+     .presentacion {
+         padding-top: 66%;
+         text-align: center;
+     }
+     .presentacion h3 {
+         font-size: 40px;
+         margin-bottom: 15px;
+     }
+     .presentacion p {
+         font-size: 25px;
+         margin-bottom: 5px;
+     }
+     img {
+         width: 50%;
+     }
+     .servicios_card div {
+         /* text-align: center; */
+         padding: 30px;
+         margin: 5px;
+     }
+     .contacto {
+         text-align: center;
+         background-color: black;
+         color: white;
+         padding: 60px;
+     }
+     .contacto div h3 {
+         font-size: 25px;
+         margin-bottom: 20px;
+     }
+     .contacto div p {
+         font-size: 15px;
+         margin-bottom: 10px;
+     }
+     .btn_contacto a {
+         text-decoration: none;
+         text-align: center;
+         color: black;
+         font-weight: bolder;
+         
+     }
+     .btn_contacto {
+         margin-top: 30px;
+         padding: 10px;
+         background-color: rgb(221, 163, 221);
+     }
+     .redes h2 {
+         text-align: center;
+         padding: 5px;
+     }
+    
+     .iconos_redes {
+         display: flex;
+         justify-content: center;
+         background-color: aliceblue;
+     }
+     .tweet {
+         display: flex;
+         font-size: 25px;
+     }
+     
+     .face {
+         display: flex;
+         font-size: 25px;
+     }
+     
+     .whatsapp {
+         display: flex;
+         font-size: 25px;
+     }
+     .direccion {
+         text-align: center;
+         padding: 15px;        
+    }
+     .ubicacion {
+         text-align: center;
+         padding: 15px;
+     }
+     iframe {
+         margin-top: 10px;
+         width: 80%;
+         height: 80%;
+         align-items: center;
+     }
+     
+     .card_phone h2 {
+         margin: 0 auto;
+         overflow: hidden;
+         border-right: 2px solid rgb(0, 0, 0);
+         animation: tipado 2s infinite alternate steps(11);
+     }
+     .card_desktop h2 {
+         margin: 0 auto;
+         overflow: hidden;
+         border-right: 2px solid rgb(0, 0, 0);
+         animation: tipado 2s infinite alternate steps(11);
+     }
+     .card_ecommerce h2 {
+         margin: 0 auto;
+         overflow: hidden;
+         border-right: 2px solid rgb(0, 0, 0);
+         animation: tipado2 2s infinite alternate steps(11);
+     }
+
+}
+@keyframes tipado {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 30%;
+    } 
+}
+@keyframes tipado2 {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 44%;
+        } 
 }
 
